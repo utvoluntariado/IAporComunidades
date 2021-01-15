@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>[IA] Porcentaje Riesgos</title>
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QYE4LSVJW6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QYE4LSVJW6');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h4 class="title">
+      <img src="img/UTV_Logo.png" />
+      <span>[IA] por CCAA</span>
+      <br />
+      <span>Porcentaje Riesgos</span>
+    </h4>
+    <div id="div_contenido">
+      <h3>Selecciona Comunidad Autónoma</h3>
+      <p class="tit_info">
+          Total Confirmados hoy, a 7 y 14 días.
+          <br />
+          [IA] Incidencia Acumulada a 7 y 14 días.
+      </p>
+      <select id="sel_comunidad" change="handleComunidad">
+        <option value="select_region">Selecciona comunidad</option>
+      </select>
+      <div id="div_comunidad">
+        <div class="provincia">
+          <p>Comunidad Autónoma</p>
+          <ul>
+            <li>Confirmados: <span>...</span></li>
+            <li>Confirmados 7d: <span>...</span></li>
+            <li>Confirmados 14d: <span>...</span></li>
+          </ul>
+          <p class="title_ia">[IA] Incidencia Acumulada a 7 y 14 días</p>
+          <ul>
+            <li>IA 7d: <span>...</span></li>
+            <li>IA 14d: <span>...</span></li>
+          </ul>
+          <ul>
+            <li>Población: <span id="sp_poblacion"></span></li>
+          </ul>
+        </div>
+      </div>
+      <div id="div_mas_info" class="no-visible"></div>
+    </div>
+    <div class="footer">
+      <div class="fuentes">
+        <p>
+          * Los datos para los cálculos se han obtenido de la API
+          <a href="https://www.narrativa.com" target="_blank">
+            narrativa.com
+          </a>
+        </p>
+        <p>
+          * Las fórmulas para realizar la distribución binomial se han sacado de
+          <a href="https://www.estadisticaparatodos.es/software/javascript.html" target="_blank">
+            estadisticaparatodos.es
+          </a>
+        </p>
+        <p>
+          * Los datos para conocer la población son sacados de la BBDD del INE (Instituto Nacional de Estadística)
+          <a href="https://www.ine.es/">ine.es</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/functions.js"></script>
+</body>
+</html>
