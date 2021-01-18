@@ -366,7 +366,7 @@ function tablaProv(region, list_ia) {
   let html = `
     <h3>Selecciona nº de personas</h3>
     <p class="tit_info">
-      Aumenta el nº de personas reunidas para ver cual sería el porcentaje de riesgo a ser contagiado en ${region}.
+      Aumenta el nº de personas reunidas para ver cual es la probabilidad de contar con un contagiado en ${region}.
     </p>
     <div class="slidecontainer">
       <span id='range_min'>${range}</span>
